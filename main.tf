@@ -7,8 +7,9 @@ terraform {
   }
 
 provider "aws" {
-  version = "~>3.0"
   region  = "east-us-1"
+  access_key = ""
+  secret_key = ""
 }
 
 resource "aws_s3_bucket" "bucket" {
