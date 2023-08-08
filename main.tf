@@ -10,3 +10,11 @@ provider "aws" {
   version = "~>3.0"
   region  = "east-us-1"
 }
+
+resource "aws_s3_bucket" "bucket" {
+  bucket = "bucket-by-terraform"
+
+  tags = {
+    Name        = "iac terraform"
+  }
+}
