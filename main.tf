@@ -27,11 +27,6 @@ resource "aws_s3_bucket" "bucket_frontend" {
     Name = "iac terraform ed"
   }
 }
-/* resource "aws_s3_bucket_acl" "bucket_frontend_acl" {
-  bucket = aws_s3_bucket.bucket_frontend.id
-  acl    = "private"
-}
- */
 
 resource "aws_cloudfront_distribution" "cloudfront_main" {
   origin {
